@@ -24,3 +24,4 @@ The abstraction of a *FootballDataService* exists, but as of now only has one co
     3) ***BookieAverageProbabilityEstimator*** - The simplest yet the most effective estimator (at least as of date of current upload). Takes the odds from several bookmakers, converts them to probabilities and takes the average. The idea is to remove potential biases that each bookie may have (whether intentional or not) and arrive at a more realistic probability estimation than what the odds of a single bookie may suggest. Another advantage is that the framework's bet pickers are then naturally set up to take advantage of the bookies' biases when choosing a bet.
     
   The relations between the different components are summarized with the illustration below:
+![Component Relations](/images/component-relations.jpg)
