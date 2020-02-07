@@ -6,8 +6,8 @@ import warnings
 from data_services import SoccerwayFootballDataService
 from constants import ACCEPTED_GOALS, DB_PATH
 
-class EloRatingsOddsEstimator:
-    """Elo ratings-based model for estimating odds in games. Uses a standard elo ratings system adapted
+class EloRatingsProbabilityEstimator:
+    """Elo ratings-based model for estimating probabilities in games. Uses a standard elo ratings system adapted
        for football, with a couple of additions:
            - form:                     Estimates a team's home and away 'form', which acts as a correction
                                        on the team's current strength estimation (points). The idea is that

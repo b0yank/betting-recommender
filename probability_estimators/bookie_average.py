@@ -10,9 +10,9 @@ from utils import odds_to_probabilities
 from utils.match_columns import get_all_match_columns
 from utils.odds_columns import get_all_odds_columns
 
-class BookieAverageOddsEstimator:
-    """Simple odds estimator. Uses coefficients from several bookmakers, converts them to probabilities and averages them to use as
-       probabilities in games. Since bookie coefficients cannot be directly converted to probabilities (bookies lower coefficents on
+class BookieAverageProbabilityEstimator:
+    """Simple probability estimator. Uses coefficients from several bookmakers, converts them to probabilities and averages them to use
+       as probabilities in games. Since bookie coefficients cannot be directly converted to probabilities (bookies lower coefficents on
        purpose, so using the reciprocal of coefficients gives more than 100% probability), the estimator assumes an equal lowering of
        the coefficients of all related events
 

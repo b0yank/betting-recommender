@@ -13,7 +13,7 @@ from tensorflow.keras.optimizers import SGD, Adam
 
 from constants import ACCEPTED_GOALS, DB_PATH
 
-class RnnOddsEstimator:
+class RnnProbabilityEstimator:
     """ Uses a recurrent neural network, pretrained to use up to 'n_timestep_games' of a team's previous games
         as input, to provide probabilities for certain events in future games. Models poisson distributions for
         the number of goals scored by each team, both before half-time and before full-time, and uses those
