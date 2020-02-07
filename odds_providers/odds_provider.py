@@ -24,7 +24,7 @@ _BOOKIE_LEAGUE_URLS = {
 def get_all_providers():
     module = sys.modules[globals()['__name__'].split('.')[0]]
     odds_provider_names = [n[0] for n in inspect.getmembers(module, inspect.isclass)]
-    return [p for p in [getattr(module, pn) for pn in odds_provider_names if pn != 'FootballDataOddsProvider'] if issubclass(p, OddsProvider)]
+    return [p for p in [getattr(module, pn) for pn in odds_provider_names] if issubclass(p, OddsProvider)]
 
 class OddsProvider:
     """Abstract odds provider class.
